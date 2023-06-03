@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import MaterialTable from 'material-table';
 import tableIcons from './tableIcons';
+import "./table.css";
 // import { ThemeProvider } from "@mui/material";
 
 function Table() {
@@ -16,35 +17,44 @@ function Table() {
   ]);
 
   const [data, setData] = useState([
+    { name: 'Dipen Patel', emailId: 'dipenpatel123@gmail.com', schoolName: 'ABC School', grades: '90%', status: 'Completed'},
+    { name: 'Dipen Patel', emailId: 'dipenpatel123@gmail.com', schoolName: 'ABC School', grades: '90%', status: 'Incomplete' },
+    { name: 'Dipen Patel', emailId: 'dipenpatel123@gmail.com', schoolName: 'ABC School', grades: '90%', status: 'Pending' },
     { name: 'Dipen Patel', emailId: 'dipenpatel123@gmail.com', schoolName: 'ABC School', grades: '90%', status: 'Completed' },
+    { name: 'Dipen Patel', emailId: 'dipenpatel123@gmail.com', schoolName: 'ABC School', grades: '90%', status: 'Completed'},
+    { name: 'Dipen Patel', emailId: 'dipenpatel123@gmail.com', schoolName: 'ABC School', grades: '90%', status: 'Incomplete' },
+    { name: 'Dipen Patel', emailId: 'dipenpatel123@gmail.com', schoolName: 'ABC School', grades: '90%', status: 'Pending' },
     { name: 'Dipen Patel', emailId: 'dipenpatel123@gmail.com', schoolName: 'ABC School', grades: '90%', status: 'Completed' },
+    { name: 'Dipen Patel', emailId: 'dipenpatel123@gmail.com', schoolName: 'ABC School', grades: '90%', status: 'Completed'},
+    { name: 'Dipen Patel', emailId: 'dipenpatel123@gmail.com', schoolName: 'ABC School', grades: '90%', status: 'Incomplete' },
+    { name: 'Dipen Patel', emailId: 'dipenpatel123@gmail.com', schoolName: 'ABC School', grades: '90%', status: 'Completed'},
+    { name: 'Dipen Patel', emailId: 'dipenpatel123@gmail.com', schoolName: 'ABC School', grades: '90%', status: 'Incomplete' },
+    { name: 'Dipen Patel', emailId: 'dipenpatel123@gmail.com', schoolName: 'ABC School', grades: '90%', status: 'Pending' },
     { name: 'Dipen Patel', emailId: 'dipenpatel123@gmail.com', schoolName: 'ABC School', grades: '90%', status: 'Completed' },
+    { name: 'Dipen Patel', emailId: 'dipenpatel123@gmail.com', schoolName: 'ABC School', grades: '90%', status: 'Completed'},
+    { name: 'Dipen Patel', emailId: 'dipenpatel123@gmail.com', schoolName: 'ABC School', grades: '90%', status: 'Incomplete' },
+    { name: 'Dipen Patel', emailId: 'dipenpatel123@gmail.com', schoolName: 'ABC School', grades: '90%', status: 'Pending' },
     { name: 'Dipen Patel', emailId: 'dipenpatel123@gmail.com', schoolName: 'ABC School', grades: '90%', status: 'Completed' },
-    { name: 'Dipen Patel', emailId: 'dipenpatel123@gmail.com', schoolName: 'ABC School', grades: '90%', status: 'Completed' },
-    { name: 'Dipen Patel', emailId: 'dipenpatel123@gmail.com', schoolName: 'ABC School', grades: '90%', status: 'Completed' },
-    { name: 'Dipen Patel', emailId: 'dipenpatel123@gmail.com', schoolName: 'ABC School', grades: '90%', status: 'Completed' },
-    { name: 'Dipen Patel', emailId: 'dipenpatel123@gmail.com', schoolName: 'ABC School', grades: '90%', status: 'Completed' },
-    { name: 'Dipen Patel', emailId: 'dipenpatel123@gmail.com', schoolName: 'ABC School', grades: '90%', status: 'Completed' },
-    { name: 'Dipen Patel', emailId: 'dipenpatel123@gmail.com', schoolName: 'ABC School', grades: '90%', status: 'Completed' },
+    { name: 'Dipen Patel', emailId: 'dipenpatel123@gmail.com', schoolName: 'ABC School', grades: '90%', status: 'Completed'},
+    { name: 'Dipen Patel', emailId: 'dipenpatel123@gmail.com', schoolName: 'ABC School', grades: '90%', status: 'Incomplete' },
   ]);
   
   
   return (
-    // <ThemeProvider >
     <MaterialTable
     title="Student"
     columns={columns}
     icons={tableIcons}
     data={data}
     editable={{
-        onRowAdd: newData =>
-          new Promise((resolve, reject) => {
-            setTimeout(() => {
-              setData([...data, newData]);
+        // onRowAdd: newData =>
+        //   new Promise((resolve, reject) => {
+        //     setTimeout(() => {
+        //       setData([...data, newData]);
               
-              resolve();
-            }, 1000)
-          }),
+        //       resolve();
+        //     }, 1000)
+        //   }),
         onRowUpdate: (newData, oldData) =>
           new Promise((resolve, reject) => {
             setTimeout(() => {
@@ -70,9 +80,10 @@ function Table() {
         
       }}
       options={{
+        paginationStyle: { backgroundColor: 'red'},
         actionsColumnIndex: -1, sorting: true, selection: true,
         pageSizeOptions: [], paginationType: 'stepped',
-        pageSize: 10, showFirstLastPageButtons: false, 
+        pageSize: 8 , showFirstLastPageButtons: false, 
 
         rowStyle: rowData => ({
           backgroundColor: (rowData.tableData.id %2 === 0) ? '#FFF' : '#D9D9D9',
@@ -84,11 +95,11 @@ function Table() {
               color: '#FFFFFF',
               selectionBox: '#ffffff',
               fontSize: '16px' ,
+              padding: '1px',
               fontWeight: '500' ,
             },
         }}
     />
-    // </ThemeProvider>
   )
 }
 

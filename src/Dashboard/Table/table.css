@@ -1,0 +1,17 @@
+.MuiPaper-root {
+    border-radius: 5px !important;
+    
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25) !important;
+}
+td[value='Completed'] {
+  color: #02870F !important;
+}
+
+td[value='Incomplete'] {
+  color: #FF0505 !important;
+}
+
+td[value='Pending'] {
+  color: #C37602 !important;
+}
+
