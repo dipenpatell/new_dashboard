@@ -1,10 +1,11 @@
 import './App.css';
-import MaterialTable from 'material-table';
+import Table from './Dashboard/Table/Table';
+
 
 function App() {
   return (
     <div className="App">
-      
+      <Table></Table>
     </div>
   );
 }
