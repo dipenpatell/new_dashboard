@@ -1,3 +1,9 @@
+# Preview
+
+!["Student-table Preview"](https://raw.githubusercontent.com/dipenpatell/Expense-Tracker/main/src/Preview/Expense-Tracker_.png "Student-table Preview")
+
+!["Student-Details Preview"](https://raw.githubusercontent.com/dipenpatell/Expense-Tracker/main/src/Preview/Expense-Tracker_.png "Student-Details Preview")
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
