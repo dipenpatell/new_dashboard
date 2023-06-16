@@ -30,12 +30,13 @@ input{
     background-color: #F8F6F4;
 }
 .sb{
-    margin-bottom: 10px;
     display: flex;
     width: 600px;
     margin-right: 0px;
 }
 .cal{
+    height: 60px;
     background: #FFFFFF;
     display: flex;
+    align-items: center;
 }

@@ -1,13 +1,14 @@
 #cdd{
     color: black;
-    width: 150px;
-    height:50px;
+    font-size: 22px;
     margin-top: 5px;
     margin-right: 20px;
 }
 #ccd{
    height: 50px;
    display: flex;
+   justify-content: center;
+   align-items: center;
    width: 300px;
    /* background-color: red; */
 }

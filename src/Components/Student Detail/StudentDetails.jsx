@@ -33,7 +33,7 @@ const StudentDetails = ({ data, setData }) => {
   return (
     <div className="DetailContainer">
       <div className="heading">
-        <h1>Profile Details</h1>
+        <h1>{student.id}</h1>
         {editable ? (
           <button onClick={handleSave}>
             Save

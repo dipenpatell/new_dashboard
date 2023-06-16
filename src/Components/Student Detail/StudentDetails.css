@@ -4,6 +4,7 @@
     margin: 30px;
     padding: 20px;
     border-radius: 20px;
+    margin-top: 90px;
 }
 
 .heading{
@@ -14,7 +15,7 @@
 
 button{
     border: 2px solid #0F86EB4D;
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 5px;
     font-size: 20px;
     background-color: transparent;
