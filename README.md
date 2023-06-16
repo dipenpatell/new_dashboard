@@ -1,8 +1,8 @@
 # Preview
 
-!["Student-table Preview"](https://raw.githubusercontent.com/dipenpatell/Expense-Tracker/main/src/Preview/Expense-Tracker_.png "Student-table Preview")
+!["Student-table Preview"](https://raw.githubusercontent.com/dipenpatell/new_dashboard/master/src/img/student.png "Student-table Preview")
 
-!["Student-Details Preview"](https://raw.githubusercontent.com/dipenpatell/Expense-Tracker/main/src/Preview/Expense-Tracker_.png "Student-Details Preview")
+!["Student-Details Preview"](https://raw.githubusercontent.com/dipenpatell/new_dashboard/master/src/img/student-details.png "Student-Details Preview")
 
 # Getting Started with Create React App
 
